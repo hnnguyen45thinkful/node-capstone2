@@ -1,0 +1,46 @@
+
+<link rel="stylesheet" href="/css/bootstrap.css"/> <!-- load bootstrap css -->
+<link rel="stylesheet" href="/css/style.css"/>
+<div class="container">
+<div class="header clearfix">
+  <nav>
+    <ul class="nav nav-pills pull-right">
+      <li role="presentation"><a href="/users/logout">Logout</a></li>
+    </ul>
+  </nav>
+  <h2 class="text-muted"><strong>Budget Recorder Tracker</strong></h2>
+</div>
+
+<aside class="information">
+
+ <header>
+
+    <!-- here’s the avatar -->
+  <img src="http://www.clearpoint.org/wp-content/uploads/track-your-spending.jpg">
+
+  <!-- the user name -->
+  <h1>Hello <%= user.username %>!</h1>
+  <!---->
+  <header>
+
+    <!-- and role or location -->
+    <%= user.position%>
+    <h2>Web & Mobile Developer</h2>
+
+  </header>
+
+  <!-- bit of a bio; who are you? -->
+  <div class="profile-bio">
+    <%=user.bio%>
+    <p>Insert information and insturctions</p>
+  </div>
+
+
+<!-- Projects worked on -->
+  <div class="profile-bio">
+    Projects:
+    <h4><%= user.title %> </h4>
+    <h5> <a href="#"><%= user.link %></a></h5>
+  </div>
+</aside>
+</div>
